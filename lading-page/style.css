@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto Flex', sans-serif;
+    color: white;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 200;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+li {    
+    display: inline-block;
+    padding: 20px;
+    color: white;
+}
+
+li:hover {
+    color: #024959;
+    transition: 0.5s all;
+}
+
+#tem-conta {
+    border: 2px solid #024959;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#tem-conta:hover {
+    background-color: #024959;
+    color: white;
+    transition: 0.3s all;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+span {
+    color: #024959;
+}
+
+p {
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+input#btn {
+    background-color: #024959;
+    color: white;
+    width: 40%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+input#btn:hover {
+    background-color: #01323d;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+img {
+    height: 400px;
+    margin-left: 70px;
+}
+
+@media screen and (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input {
+        align-items: center;
+    }
+
+    ul {
+        text-align: center;
+    }
+    
+    img {
+        display: none;
+    }
+}
