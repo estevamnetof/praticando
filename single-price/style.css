@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+main {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.card-principal {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+header {
+    height: 200px;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 26px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 20px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+header p {
+    padding: 10px;
+    padding-left: 20px;
+    color: hsl(71, 73%, 54%);
+    
+}
+
+header span {
+    color: hsl(206, 13%, 78%);
+    padding: 10px;
+    padding-left: 1px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card1 {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    width: 300px;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+.card1 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.card1 h3 {
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.card1 span {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.651);
+}
+
+.card1 p {
+    margin-top: 10px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.card1 button {
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+}
+
+.card2 {
+    background-color: hsla(179, 61%, 46%, 0.836);
+    color: white;
+    width: 300px;
+    padding: 30px;
+    border-bottom-right-radius: 10px;
+}
+
+.card2 h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.card2 p {
+    color: rgba(255, 255, 255, 0.651);
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 610px) {
+    .card-principal {
+        max-width: 375px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+}
