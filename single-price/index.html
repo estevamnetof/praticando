@@ -2,50 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Single Price Grid Component</title>
-  
+  <title>Single Price</title>
 </head>
 <body>
-  <main>
-    <div class="card-principal">
-      <header>
+  <div class="container">
+    <div class="wrapper">
+      <div class="box join">
         <h1>Join our community</h1>
-        <p>30-day, hassle-free money back guarantee</p>
-        <p>
-          <span>
-            Gain access to our full library of tutorials along with expert code reviews.
-            <span>Perfect for any developers who are serious about honing their skills.</span>
-          </span>
-        </p>
-      </header>
-      <article>
-        <div class="card1">
-          <h2>Monthly Subscription</h2>
-          <h3>&dollar;29 <span>per month</span></h3>
-          <p>
-            Full access for less than &dollar;1 a day 
-          </p>
-          <button>Sign Up</button>
-        </div>
-        <div class="card2">
-          <h2>Why Us</h2>
-          <p>
-            Tutorials by industry experts
-            Peer &amp; expert code review
-            Coding exercises
-            Access to our GitHub repos
-            Community forum
-            Flashcard decks
-            New videos every week
-          </p>
-        </div>
-      </article>
+        <h3>30-day, hassle-free money back guarantee</h3>
+        <p>Gais access to our full library of tutorials along with expert code reviews.</p>
+        <p>Perfect for any developers who are serious about honing their skills</p>
+      </div>
+      <div class="box sub">
+        <h2>Monthly Subscription</h2>
+        <h5><span class="price">&dollar;29</span><span>per month</span></h5>
+        <p>Full acess for less than &dollar;1 a day</p>
+        <a href="#">Sign Up</a>
+      </div>
+      <div class="box why">
+        <h2>Why Us</h2>
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer & expert code review</li>
+          <li>Coding exercises</li>
+          <li>Acess to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+      </div>
     </div>
-  </main>
-  
-
+  </div>
 </body>
 </html>

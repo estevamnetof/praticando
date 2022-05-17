@@ -3,136 +3,124 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    max-width: 1400px;
     font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     background-color: hsl(204, 43%, 93%);
 }
 
-main {
-    position: absolute;
-    width: 600px;
-    height: 400px;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
+.container {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.card-principal {
-    position: relative;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+.wrapper {
+    display: grid;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #FFF;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'a a' 'b c';
+    margin: 2rem 1rem;
 }
 
-header {
-    height: 200px;
-    padding: 10px;
+.box {
+    padding: 40px;
 }
 
-header h1 {
-    font-size: 26px;
-    padding: 10px;
-    padding-left: 20px;
-    margin-top: 20px;
-    color: hsl(179, 62%, 43%);
-    font-weight: 700;
+.join {
+    grid-area: a;
 }
 
-header p {
-    padding: 10px;
-    padding-left: 20px;
-    color: hsl(71, 73%, 54%);
-    
-}
-
-header span {
-    color: hsl(206, 13%, 78%);
-    padding: 10px;
-    padding-left: 1px;
-}
-
-article {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.card1 {
+.sub {
+    grid-area: b;
     background-color: hsl(179, 62%, 43%);
-    color: white;
-    width: 300px;
-    padding: 30px;
-    border-bottom-left-radius: 10px;
 }
 
-.card1 h2 {
+.why {
+    grid-area: c;
+    background-color: hsl(179, 62%, 50%);
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 12px;
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.4;
+}
+
+h2 {
+    color: #FFF;
     font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    padding-left: 15px;
+    padding-bottom: 15px;
 }
 
-.card1 h3 {
-    font-size: 30px;
-    padding-left: 15px;
+h5 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
-.card1 span {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.651);
+h5 span.price {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    padding-right: 10px;
 }
 
-.card1 p {
-    margin-top: 10px;
-    font-size: 16px;
-    padding-left: 15px;
+h5 span {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
 }
 
-.card1 button {
-    margin-top: 25px;
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
+.sub p {
+    color: #FFF;
+}
+
+.sub a {
+    display: block;
+    text-align: center;
     background-color: hsl(71, 73%, 54%);
-    color: white;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 12px 0;
+    border-radius: 4px;
+    margin-top: 30px;
 }
 
-.card2 {
-    background-color: hsla(179, 61%, 46%, 0.836);
-    color: white;
-    width: 300px;
-    padding: 30px;
-    border-bottom-right-radius: 10px;
+.why ul {
+    list-style: none;
 }
 
-.card2 h2 {
-    font-size: 20px;
-    margin-bottom: 25px;
-    margin-top: 20px;
-    padding-left: 15px;
+.why li {
+    color: #FFF;
+    padding-bottom: 4px;
+    font-size: 14px;
 }
 
-.card2 p {
-    color: rgba(255, 255, 255, 0.651);
-    font-size: 16px;
-    padding-left: 15px;
-}
-
-@media screen and (max-width: 610px) {
-    .card-principal {
-        max-width: 375px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: 'a' 'b' 'c';
     }
 
-    article {
-        display: flex;
-        flex-direction: column;
+    .box {
+        padding: 30px;
     }
 }
