@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="idade.css">
+
+    <title>Verificador de idade</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    
+    <section>
+
+        <div>
+            <label for="ano">Ano de Nascimento:</label>
+            <input type="number" id="ano" min="1950">
+
+            <br><br>
+
+            <label for=""></label>Sexo:</label>
+            
+            <input type="radio" name="sexo" id="masc" value="Homem">
+            <label for="masc">Masculino</label>
+            
+            <input type="radio" name="sexo" id="fem" value="Mulher">
+            <label for="fem">Feminino</label>
+
+            <br><br>
+
+            <input type="button" value="Verificar" id="btn" onclick="verificar();">
+        </div>
+
+        <div id="res">
+            <p> <b> Preencha os dados acima para ver o resultado </b> </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Michael Douglas Braga </p>
+    </footer>
+
+    <script src="idade.js"></script>
+
+</body>
+</html>
