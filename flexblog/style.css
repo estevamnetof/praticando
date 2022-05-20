@@ -153,7 +153,7 @@ img {
 }
 
 .produtos-item {
-    flex: 1 1 175px;
+    flex: 1 1 175px; /*175px é o mesmo que colocar 'mnn-width: 175px;'*/
     margin: 10px;
 }
 
