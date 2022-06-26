@@ -1,0 +1,15 @@
+@keyframes pulsar {
+    to {
+        transform: scale(1.5);
+    }
+}
+
+img {
+    width: 45px;
+    animation-name: pulsar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
