@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider com HTML e CSS</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <!--Radio Button-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio1">
+            <!--Fim radio Buttons-->
+
+            <!--Slide images-->
+            <div class="slide first">
+                <img src="https://sujeitoprogramador.com/wp-content/uploads/2021/03/thumb-video.png" alt="imagem 1">
+            </div> 
+            <div class="slide">
+                <img src="https://sujeitoprogramador.com/wp-content/uploads/2021/09/thumb.png" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="https://sujeitoprogramador.com/wp-content/uploads/2021/06/thumbpost.png" alt="imagem 3">
+            </div>
+            <div class="slide">
+                <img src="https://sujeitoprogramador.com/wp-content/uploads/2018/12/qualpc.png" alt="imagem 4">
+            </div>
+            <!--Slide images-->
+
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
