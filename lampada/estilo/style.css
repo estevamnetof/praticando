@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #718F94, #545775);
+    color: rgba(255, 255, 255, 0.938);
+}
+
+header, main {
+    width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+header h2 {
+    font-weight: 400;
+}
+
+header p {
+    font-weight: 200;
+}
+
+button {
+    font-family: 'Poppins';
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .8s background;
+}
+
+button:hover {
+    background-color: #202020;
+    color: #fff;
+    transition: .8s background;
+}
+
+footer {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #718F94;
+}
