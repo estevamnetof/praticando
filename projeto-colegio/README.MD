@@ -1,3 +1,11 @@
+ Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px 
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas: acima de 1200px
+
 Fonte logo:
 	Passions Conflict
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');

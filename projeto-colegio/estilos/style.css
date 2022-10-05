@@ -1,0 +1,8 @@
+i#burguer {
+    display: block;
+    cursor: pointer;
+}
+
+menu#itens {
+    display: none;
+}
