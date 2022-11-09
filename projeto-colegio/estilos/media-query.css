@@ -1,0 +1,16 @@
+/* Celular: de 600px até 768px */
+@media (min-width: 600px) and (max-width: 768px) {
+    i#burguer {
+    display: block;
+    cursor: pointer;
+    }   
+
+    ul.nav-itens {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+}
+
