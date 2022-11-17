@@ -23,7 +23,9 @@
             </ul>
         </div>
         <div class="btn">
-            <button href="#" class="cadastro">Matricule-se</button>
+            <button>
+                <a href="#" class="cadastro" data-modal='abrir'>Matricule-se</a>
+            </button>
         </div>
     </nav>
 
@@ -31,6 +33,19 @@
         <h1>Aprenda algo novo todos os dias</h1>
     </section>
 
-    <script src="script.js"></script>
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" form="nome" id="nome">
+                <label for="email">Email</label>
+                <input type="email" form="email" id="email">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
