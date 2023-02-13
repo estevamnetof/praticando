@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.carro, .bicicleta {
+    background: #111;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+span {
+    color: #febe01;
+}
+
+p {
+    color: #b2b2b2;
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background: #febe01;
+    color: #332200;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+}
