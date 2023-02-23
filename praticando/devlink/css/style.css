@@ -1,0 +1,56 @@
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Cores */
+
+:root {
+    --cor-0: #ffffff;
+    --cor-1: #000000;
+    --stroke-dark: rgba(255, 255, 255, 0.5);
+    --stroke-light: rgba(0, 0, 0, 0.5);
+    --surface-dark: rgba(255, 255, 255, 0.1);
+    --surface-light: rgba(0, 0, 0, 0.05);
+    --surface-dark-hover: rgba(255, 255, 255, 0.05);
+    --surface-light-hover: rgba(0, 0, 0, 0.02);
+    --highlight-dark: rgba(255, 255, 255, 0.2);
+    --highlight-light: rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografia */
+
+.text-md {
+    font: 500 1rem/1.5 'Inter', sans-serif;
+}
+
+.text-sm {
+    font: 400 0.875rem/1.5 'Inter', sans-serif;
+}
