@@ -16,13 +16,20 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: var(--cor-0);
+    text-align: center;
 }
 
-/* img {
+h1, p, a {
+    font-family: 'Inter', sans-serif;
+}
+
+img {
     max-width: 100%;
     height: auto;
     display: block;
-} */
+    border-radius: 50%;
+}
 
 .container {
     max-width: 1200px;
@@ -54,3 +61,13 @@ body {
 .text-sm {
     font: 400 0.875rem/1.5 'Inter', sans-serif;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-0);
+}
+
