@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        .container {
+            display: flex;
+            width: 700px;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        a {
+            display: block;
+        }
+
+        h1, p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        h1::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 8px;
+            background: black;
+            margin-right: 8px;
+            transition: width .2s;
+        }
+
+        .container a:hover h1::before {
+            width: 24px;
+        }
+
+        p {
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href=""><img src="gerador-de-senha.PNG"></a>
+        <h1>Gerador de senha</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eveniet debitis enim nulla sequi, nesciunt minus eos, voluptatum ullam consequuntur dicta architecto modi voluptates officia harum neque molestias aliquid. Nulla?</p>
+    </div>
+</body>
+</html>
