@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+/* Menu */
+
+.menu-bg {
+    background: linear-gradient(91.77deg, #5D35B5 0%, #C067D1 98.9%);
+}
+
+.menu-logo {
+    width: 113px;
+    height: 40px;
+    margin-left: 42px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 104px;
+    align-items: center;
+}
+
+.menu-itens {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    display: flex;
+    font-size: 1,125rem;
+    list-style: none;
+    align-items: center;
+    margin-right: 42px;
+}
+
+.menu-itens li {
+    cursor: pointer;
+    align-items: center;
+    transition: .3s all;
+}
+
+.menu-itens li + li {
+    padding-left: 30px;
+
+}
+
+.menu-itens li:hover {
+    color: #5D35B5;
+}
+
+.menu-itens li + li::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: 
+    #9539B9;
+    margin-right: 30px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        flex-direction: center;
+        padding: 32px 0px;
+    }
+
+    .menu-logo {
+        margin-bottom: 32px;
+    }
+
+    .menu-itens {
+        margin-right: 0px;
+    }
+
+    .menu-itens li {
+        padding-left: 30px;
+    }
+
+    .menu-itens li + li::before {
+        display: none;
+    }
+}
+
+/* Introdução */
+
+.introducao {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 410px;
+    width: 100%;
+}
+
+.introducao h1, p, button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.introducao h1 {
+    font-family: 'Roboto', monospace;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 128px;
+}
+
+.introducao p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1,125rem;
+    font-weight: 500;
+    padding-top: 16px;
+}
+
+.introducao button {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    background: #C167D1;
+    border: none;
+    color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.introducao button:hover {
+    background: #5D35B5;   
+}
+
+/* Produtos */
+
+.produtos {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.produtos h1, h2 {
+    color: #703EBB;
+}
+
+.produtos h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 64px;
+}
+
+.produtos-items {
+    display: flex;
+    list-style: none;
+    padding-top: 64px;
+    padding-bottom: 170px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.produtos-items li + li {
+    margin-left: 70px;
+}
+
+.produtos-items h2 {
+    font-size: 1,125rem;
+    font-weight: 700;
+    padding-top: 16px;
+}
+
+.produtos-items p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #6A6A6A;
+    padding-top: 14px;
+}
+
+@media (max-width: 800px) {
+    .produtos-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 40ch;
+    }
+
+    .produtos-items li + li {
+        margin-left: 0px;
+        padding-top: 32px;
+    }
+    
+}
