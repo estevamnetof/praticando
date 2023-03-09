@@ -1,0 +1,68 @@
+body {
+    max-width: 1200px;
+    font-family: 'Playfair Display SC', serif;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pessoas h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    display: grid;
+    grid-column: 1/-1;
+    padding-top: 90px;
+    color: #222A39;
+}
+
+.pessoas h1::after {
+    content: '';
+    display: block;
+    width: 140px;
+    height: 3px;
+    background: #222A39;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 64px;
+}
+
+.pessoas-fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    gap: 55px 20px;
+}
+
+.pessoas-fotos h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.pessoas-fotos h2::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+    background: black;
+    margin-right: 4px;
+}
+
+/* .perfil-1 span, .perfil-1 h2::before {
+    color: #EAB736;
+} */
+
+/* .perfil-2 span {
+    color: #F27036;
+} */
+
+.pessoas-fotos span:nth-child(1) {
+    color: #EAB736;
+}
+
+.pessoas-fotos span:nth-child(2) {
+    color: #F27036;
+}
