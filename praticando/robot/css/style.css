@@ -166,7 +166,7 @@ body {
     display: flex;
     list-style: none;
     padding-top: 64px;
-    padding-bottom: 170px;
+    padding-bottom: 64px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -199,6 +199,18 @@ body {
     .produtos-items li + li {
         margin-left: 0px;
         padding-top: 32px;
-    }
-    
+    }   
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background: linear-gradient(91.77deg, #5D35B5 0%, #C067D1 98.9%);
+}
+
+.footer p {
+    font-size: 1.125rem;
 }
